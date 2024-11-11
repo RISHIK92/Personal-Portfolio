@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishik | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 5%;
+            background-color: #333;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #f39c12;
+        }
+
+        .main-section {
+            background-color: #333;
+            color: #fff; 
+            padding: 100px;
+            text-align: center; 
+        }
+
+        .main-section h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .main-section h1 span {
+            color: #f39c12;
+        }
+
+        .main-section p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-section button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            background-color: #f39c12;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .main-section button:hover {
+            background-color: #fff;
+        }
+
+        .section {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .section p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            background-color: #eee;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .skill {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill:hover {
+            background-color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Rishik</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <h1>Hello, I'm <span>Rishik</span></h1>
+        <p>I'm a Web Developer & AI Enthusiast</p>
+        <button onclick="window.location.href='#portfolio'">View My Work</button>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I'm passionate about creating interactive, user-friendly web applications and exploring the limitless potential of artificial intelligence. 
+            Currently honing my skills in modern web development technologies, I'm focused on building responsive and visually engaging websites.
+        </p>
+        <p>
+            <strong>Web Development:</strong> Learning the ins and outs of HTML, CSS, JavaScript, and back-end frameworks to craft seamless digital experiences.
+        </p>
+        <p>
+            <strong>AI & Machine Learning:</strong> Diving deep into Python-based machine learning, algorithms, and neural networks to tackle real-world challenges with data-driven solutions.
+        </p>
+        <p>
+            My goal is to blend web development with intelligent systems, making applications smarter and more impactful for users.
+        </p>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2>Portfolio</h2>
+        <div class="portfolio-gallery">
+            <a href="https://github.com/RISHIK92/Todo-App"><button class="portfolio-item" ><div>Project 1</div></button></a>
+            <a href="https://github.com/RISHIK92/Personal-Portfolio"><button class="portfolio-item" ><div>Project 2</div></button></a>
+            <a href="https://www.projects.com"><button class="portfolio-item" ><div>Project 3</div></button></a>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div>
+                <div class="skill" style="margin-bottom: 5px;">JavaScript</div>
+                <div class="skill">Python</div>
+            </div>
+            <div>
+                <div class="skill" style="margin-bottom: 2px">MongoDB</div>
+                <div class="skill" style="margin-bottom: 2px">Express</div>
+                <div class="skill" style="margin-bottom: 2px">React</div>
+                <div class="skill">Node.js</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
